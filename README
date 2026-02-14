@@ -1,0 +1,3 @@
+An APRS->Discord bridge.
+
+Build your docker image locally, then deploy.
