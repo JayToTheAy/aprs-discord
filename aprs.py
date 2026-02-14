@@ -11,6 +11,7 @@ MENTION_PERMS = AllowedMentions(
 )
 MY_CALL = "WY4RC"
 MY_SSID = "67"
+TARGET_THREAD = 1472079150687850557
 
 
 class APRSBridge:
@@ -43,7 +44,7 @@ class APRSBridge:
                             content=text,
                             username=originator,
                             allowed_mentions=MENTION_PERMS,
-                            thread=Object(id=1472079150687850557)
+                            thread=Object(id=TARGET_THREAD)
                         )
                     if packet.get("msgNo"):
                         logging.debug(f"Acking msg {packet['msgNo']}")
