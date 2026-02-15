@@ -34,8 +34,8 @@ class APRSBridge:
             )
             originator = packet.get("from")
             if originator:
-                originator.split(",")
-                avatar_url = CALLS[originator[0]]
+                originator_call = originator.split(",")
+                avatar_url = CALLS[originator_call[0]]
                 if packet.get("format") and packet.get("format") == "message":
                     text = packet.get("message_text")
                     if text:
