@@ -1,1 +1,5 @@
 .venv
+options.py
+!templates/options.py
+call_avatars.py
+!templates/call_avatars.py

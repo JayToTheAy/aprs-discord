@@ -1,5 +1,8 @@
 FROM python:3.14.3-alpine3.23
 
+COPY . /app
+WORKDIR /app
+
 RUN \
     python -m venv .venv && \
     .venv/bin/pip install -U pip && \
