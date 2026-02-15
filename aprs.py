@@ -5,8 +5,8 @@ import aiohttp
 import aprslib
 from discord import Webhook, Object
 
-from .options import MY_CALL, MY_SSID, WEBHOOK_URL, TARGET_THREAD, MENTION_PERMS
-from .call_avatars import CALLS
+from options import MY_CALL, MY_SSID, WEBHOOK_URL, TARGET_THREAD, MENTION_PERMS
+from call_avatars import CALLS
 
 
 class APRSBridge:
