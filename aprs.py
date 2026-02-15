@@ -43,7 +43,6 @@ class APRSBridge:
                             content=text,
                             username=originator,
                             allowed_mentions=MENTION_PERMS,
-                            silent=True,
                             thread=Object(id=TARGET_THREAD),
                             avatar_url=avatar_url,
                         )
